@@ -1,0 +1,1 @@
+Para adicionar uma imagem na página utiliza-se a tag <img>. Esta tag não tem </img> (o que significa que não tem tag de fecho).

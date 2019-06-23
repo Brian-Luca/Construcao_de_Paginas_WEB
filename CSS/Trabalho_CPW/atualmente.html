@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>
+			Evolução da Eletrônica
+		</title>
+		<style type="text/css">
+			@font-face {
+				font-family: "SilentLips";
+				src: url("SilentLips.ttf");
+				font-weight: normal;
+				font-style: normal;
+			}
+			@-webkit-keyframes fadeIn {
+				0% { opacity: 0; }
+				100% { opacity: 1; } 
+			}
+			@-moz-keyframes fadeIn {
+				0% { opacity: 0;}
+				100% { opacity: 1; }
+			}
+			@-o-keyframes fadeIn {
+				0% { opacity: 0; }
+				100% { opacity: 1; }
+			}
+			@keyframes fadeIn {
+				0% { opacity: 0; }
+				100% { opacity: 1; }
+			}
+			.fadeIn {
+				-webkit-animation: fadeIn 3s ease-in-out;
+				-moz-animation: fadeIn 3s ease-in-out;
+				-o-animation: fadeIn 3s ease-in-out;
+				animation: fadeIn 3s ease-in-out;
+			}
+			* {
+				margin: 0;
+				padding:0;
+			}
+			html, body {
+				color: black;
+                margin: 0px;
+				border: 0px;
+				padding: 0px;
+				background: white;
+			}
+			#background{
+				overflow: hidden;
+				width: 100%;
+				height: 100%;
+				position: relative;
+				background-image: url(fotos/a.jpg);
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-size: cover;
+			}
+            #contentor {
+                margin: 50px 0px 50px 70px;
+                background: white;
+                width: 1200px;
+                height: 900px;
+				outline: 6px double #209DD6;
+				outline-offset: 0px;
+            }
+            #cabeçalho {
+				background-image: url(fotos/elet.png);
+                height: 200px;
+                background-clip: border-box;
+            }
+			#imagem {
+				width: 1000px;
+				height: 80px;	  
+				margin: 50px 0px 0px 100px;
+				opacity: 0.6;
+			}
+			#texto {
+				position: absolute;
+				margin-top: -125px;
+				margin-left: 63px; 
+				font-family: "SilentLips";
+				text-align: center;
+				padding: 50px 0 0 50px;
+				font-size: 400%;
+				color: #1E90FF;
+			}
+			#menu ul {
+				font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+				list-style-type: none;
+				margin: 0 ;
+				padding: 0;
+				overflow: hidden;
+				background-color: #333;
+			}
+
+			#menu li {
+				float: left;
+			}
+			#menu li a {
+				display: inline-block;
+				color: white;
+				text-align: center;
+				padding: 14px;
+				text-decoration: none;
+				padding-right: 50px;
+				padding-left: 50px;
+			}
+
+			#menu li a:hover:not(.active) {
+				background-color: #111;
+			}
+
+			.active {
+				background-color: #5AA4FF;
+			}
+			.inicio{
+				background-color: black;
+			}
+			#corpo{
+				height: 655px;
+				-webkit-box-shadow: inset 1px 1px 31px 9px #5AA4FF; 
+				box-shadow: inset 1px 1px 31px 9px #5AA4FF;
+				background:
+					linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+					linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+					linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+					linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+					linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+					linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+				background-color: #131313;
+				background-size: 20px 20px;
+				
+			}
+			#tex{
+				padding: 30px 0px 0px 70px;
+				width: 88%;
+				color: white;
+			}
+			#titulo{
+				font-family: Georgia, serif;
+				font-size: 40px;
+				font-weight: 400;
+				text-decoration: none solid rgb(68, 68, 68);
+				font-variant: small-caps;
+				color: rgba(255,255,255,.3);
+				text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
+				padding: 60px 40px 0px 40px;
+				text-align: center;
+			}
+			#titulo h1{
+				padding-bottom: 10px;
+			}
+			#hr{
+				width: 90%;
+				margin: 0 auto;
+				border: 1px solid #5AA4FF;
+			}
+			#tex{
+				text-align: justify;
+				margin-bottom: 10px;
+				font-family: "Courier New", Courier, monospace;
+				font-size: 19px;
+				letter-spacing: -1.4px;
+				word-spacing: 0px;
+				color: #FFFFFF;
+				font-weight: 400;
+				text-decoration: none solid rgb(68, 68, 68);
+				font-style: normal;
+				font-variant: normal;
+				text-transform: none;
+			}
+			.p {
+				text-indent: 1.5em;
+			}
+			#foto img{
+				width: 800px;
+				height: 300px;
+				border-radius: 10%;
+				margin-top: 30px;
+				margin-left: 195px;
+				margin-bottom: 0px;
+			}
+		</style>
+	</head>
+	<body class="fadeIn">
+		<div id="background" >
+			<div id="contentor">
+				<div id="cabeçalho">
+					<img id="imagem" src="fotos/preto.png">
+					<h1 id="texto">
+						Evolucao da Eletronica
+					</h1>
+				</div>
+				<div id="menu">
+					<ul>
+						<li>
+							<a style=" padding: 5px 16px 5px 16px;" href="pagina_inicial.html" class="inicio">
+								<img src="fotos/home.png" alt="Home Icon" width="33px" height="33px">
+							</a>
+						</li>
+						<li>
+							<a href="eletronica.html">
+								Eletrônica
+							</a>
+						</li>
+						<li>
+							<a href="analogica.html"> 
+								Eletrônica Analógica
+							</a>
+						</li>
+						<li>
+							<a href="digital.html" >
+								Eletrônica Digital
+							</a>
+						</li>
+						<li>
+							<a href="atuacao.html">
+								Atuação
+							</a>
+						</li>
+						<li>
+							<a href="historia.html" >
+								História
+							</a>
+						</li>
+						<li>
+							<a href="atualmente.html" class="active">
+								Atualmente
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div id="corpo">
+					<div id="titulo">
+						<h1>
+							A Eletrônica Atualmente  
+						</h1>
+						<hr id="hr">
+					</div>
+					<div id="tex">
+						<p class="p">
+                            Hoje, a eletrônica está com processadores nas mais diferentes arquiteturas e circuitos complexos, que cabem na palma 
+                            da mão. Temos, por exemplo, smartphones com o capacidade de processamento superior a computadores criados na década 
+                            de 80, isso realmente é incrível!
+                        </p>
+					</div>
+					<div id="foto">
+						<img src="fotos/celular.png" alt="Eletronica Atualmente">
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta content="text/html"; charset="utf-8" http-equiv="Content-Type">
+		<title>
+			JavaScript
+		</title>
+	</head>
+
+<!--
+	Para aceder a um elemento HTML, o JavaScript pode utilizar o método document.getElementById(id). Onde o atributo id define o 
+    elemento HTML. O innerHTML é a propriedade que define o conteúdo do elemento indicado:
+-->		
+	
+	<body>
+		<h1 id="header">
+            innerHTML
+        </h1>
+        <p id="paragrafo">
+            Para aceder a um elemento HTML, o JavaScript pode utilizar o método <b>document.getElementById(id)</b>.
+        </p>
+        <button id="meuBotao">
+            Experimenta
+        </button>
+        <script>
+            document.getElementById("meuBotao").onclick=function(){
+                alert("Vou modificar o que está escrito no parágrafo e no header");
+                document.getElementById("header").innerHTML = "Muito Fixe";
+                document.getElementById("paragrafo").innerHTML = "Agora já posso modificar páginas com programação";
+            }
+        </script>
+	</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta content="text/html"; charset="utf-8" http-equiv="Content-Type">
+		<title>
+			JavaScript
+		</title>
+	</head>
+
+<!--
+	Ao utilizar o document.write() depois da página HTML estar carregada, ele irá apagar todo o código HTML que existir.
+-->		
+	
+	<body>
+		<h1>
+            document.write()
+        </h1>
+        <p>
+            Esse método utiliza-se apenas para testes no corpo da página para verificar se a saída está correta.
+        </p>
+        <button onclick="document.write(5+6)">
+            Experimenta
+        </button>
+        <script>
+            document.write('<p>Limpa todo o HTML</p><br>');
+            document.write('<b>Limpa todo o HTML</b><br>');
+            document.write('<h1>Limpa todo o HTML</h1><br>');
+            document.write('<h3>Limpa todo o HTML</h3>');
+        </script>
+	</body>
+</html>

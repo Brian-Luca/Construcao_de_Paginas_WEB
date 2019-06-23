@@ -1,0 +1,1 @@
+Indica ao browser (navegador) onde se encontra o ficheiro da imagem. Essa indicação é feita através de um caminho que geralmente será um URL relativo.

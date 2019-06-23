@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta content="text/html"; charset="utf-8" http-equiv="Content-Type">
+		<title>
+            JavaScript
+		</title>
+	</head>
+
+<!--
+    A caixa de diálogo de confirmação é chamada pela função confirm() e tem apenas dois botões: um OK e outro CANCELAR.
+
+    Assim como a função prompt(), a função confirm() também retorna um valor. Mas aqui o valor só ser true (verdadeiro) ou false (falso).
+
+    Como a função confirm() apenas retorna um valor booleano, ela é utilizada com a estrutura de decisão if que vais estudar na próxima lição.
+-->		
+	
+	<body>
+        <h1>
+            confirm()
+        </h1>
+        <p id="paragrafo">
+            A caixa de diálogo de confirmação é chamada pela função confirm() e tem apenas dois botões.
+        </p>
+        <script>
+
+            decisao = confirm("Clica em OK ou CANCELAR");
+
+            if (decisao){
+
+                alert ("clicaste no botão OK,\n"+
+                        "porque o valor retornado foi: "+decisao);
+
+            }
+
+            else {
+
+                alert ("clicaste no botão CANCELAR,\n"+
+                    "porque o valor retornado foi: "+decisao);
+            }
+
+            saudacao="Olá <b>" + decisao + "</b> bem-vindo a caixa de diálogo de confirmação confirm()";
+
+            document.getElementById("paragrafo").innerHTML=saudacao;
+
+		</script>
+	</body>
+</html>

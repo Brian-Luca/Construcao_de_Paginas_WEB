@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta content="text/html"; charset="utf-8" http-equiv="Content-Type">
+		<title>
+            JavaScript
+		</title>
+	</head>
+
+<!--
+    Os formulários HTML são o melhor e mais completo método de introduzir dados nas páginas web.
+
+    Através da utilização de eventos e funções javascript, consegue-se um controle total sobre os dados que serão passados para o programa.
+
+    Como ainda não se estudou nem eventos, nem funções vamos apenas indicar um exemplo simples para perceber a potencialidade dessa opção.
+-->		
+	
+	<body>
+        <h1>
+            Formulário HTML
+        </h1>
+        <p id="Paragrafo">
+            Os formulários HTML são o melhor e mais completo método de introduzir dados nas páginas web.
+        </p>
+        <form name="meuFormulario" method="GET">
+            Escreve alguma coisa na caixa de texto a seguir: <p>
+                <input type="text" name="caixaTexto" id="caixaTexto"><p>
+                <input type="button" name="meuBotao" value="Clica Aqui" onclick="testaResultado(this.form)">
+        </form>
+        <script>
+            function testaResultado (form) {
+
+                var resultado = meuFormulario.caixaTexto.value;
+                if (resultado==''){
+                    alert('Não escreveste nada');
+                    document.getElementById("caixaTexto").value="É aqui que tens de escrever";
+                }
+                else{
+                    alert("Escreveste: " + resultado);
+                    document.getElementById("paragrafo").innerHTML=resultado;
+                }
+            }
+		</script>
+	</body>
+</html>

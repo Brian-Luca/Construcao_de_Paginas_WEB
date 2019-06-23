@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Ligações a partir de um mapa de imagens
+		</title>
+	</head>
+
+<!--
+    ambém é possível atribuir diferentes links para áreas distintas de uma imagem. Chama-se a isso criar um mapa de imagem.
+
+    O mapa de imagens é criado com a indicação usemap dentro da tag <img> e com a tag <map> que vai definir as regiões que 
+    serão associadas ao link. Essas áreas podem ser definidas como retângulos, circulos ou polígonos.
+
+    O exemplo a seguir ilustra o uso dos mapas de imagem:
+-->		
+	
+	<body>
+		<img src="map.png" width="200" height="70" usemap="#mapa">
+        <map name="mapa">
+            <area shape="rect" coords="0,0,100,70" href="portugal" alt="Portugal" title="Portugal">
+            <area shape="rect" coords="100,0,200,70" href="brasil" alt="Brasil" title="Brasil">
+        </map>
+	</body>
+</html>

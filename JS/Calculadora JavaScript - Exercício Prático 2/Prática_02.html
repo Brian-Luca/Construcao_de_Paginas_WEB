@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html"; charset="utf-8" http-equiv="Content-Type">
+        <title>
+            Calculadora
+        </title>
+        <style>
+            body{
+                margin: 0;
+                background: #000;
+            }
+            #calculadora{
+                margin: 100px auto; 
+                width: 300px; 
+                height: 300px;
+                background: #EEE; 
+                border-radius: 5px; 
+                padding: 20px; 
+                box-shadow: 5px 5px 5px #999;
+            }
+            #visor input{
+                width: 100%; 
+                font: bold 24px verdana; 
+                text-align: right;
+            }
+            #memorias{
+                text-align: center; 
+                margin-top: 25px;
+            }
+            #memorias input{
+                width: 56px; 
+                font: bold 24px verdana; 
+                text-align: right;
+            }
+            .botoes{ 
+                margin-top: 15px; 
+                width: 100%; 
+            }
+            .botoes input{
+                width: 66px; 
+                font: bold 24px verdana; 
+                text-align: center; 
+                background: #FFF;
+            }
+            .botoes div.numeros{
+                float: left; 
+                margin-left: 3px;
+            }
+            .botoes div.operacoes{
+                float: left; 
+                margin-left: 23px;
+            }
+            .clear{
+                clear:both;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="calculadora">
+            <div id="visor">
+                <input type="text" value="0" id="resultado">
+            </div>
+            <div id="memorias">                
+                <input type="button" value="MC" id="MC" onclick="memoryClear();">                
+                <input type="button" value="MR" id="MR">                
+                <input type="button" value="MS" id="MS">                
+                <input type="button" value="M+" id="MMais">                
+                <input type="button" value="M-" id="MMenos">
+            </div>
+            
+            <div class="botoes">
+                <div class="numeros">                
+                    <input type="button" value="7" id="num7" onclick="numero('7');">                
+                    <input type="button" value="8" id="num8" onclick="numero('8');">                
+                    <input type="button" value="9" id="num9" onclick="numero('9');"> 
+                </div>
+                <div class="operacoes"><input type="button" value="+" id="numMais" class="afastamento" onclick="operacao('+');"></div>                
+            </div>
+            <div class="clear"></div>
+            <div class="botoes">    
+                <div class="numeros">                
+                    <input type="button" value="4" id="num4" onclick="numero('4');">                
+                    <input type="button" value="5" id="num5" onclick="numero('5');">                
+                    <input type="button" value="6" id="num6" onclick="numero('6');"> 
+                </div>
+                <div class="operacoes"><input type="button" value="-" id="numMenos" class="afastamento" onclick="operacao('-');"></div>                
+            </div>
+            <div class="clear"></div>
+            <div class="botoes"> 
+                <div class="numeros">                
+                    <input type="button" value="1" id="num1" onclick="numero('1');">                
+                    <input type="button" value="2" id="num2" onclick="numero('2');">                
+                    <input type="button" value="3" id="num3" onclick="numero('3');"> 
+                </div>
+                <div class="operacoes"><input type="button" value="X" id="numMult" class="afastamento" onclick="operacao('*');"></div>                
+            </div>
+            
+            <div class="clear"></div>
+            <div class="botoes"> 
+                <div class="numeros">                
+                    <input type="button" value="0" id="num0" onclick="numero('0');">                
+                    <input type="button" value="," id="numVir" onclick="numero(',');">               
+                    <input type="button" value="=" id="numEqual" onclick="resultado();"> 
+                </div>
+                <div class="operacoes"><input type="button" value="/" id="numDiv" class="afastamento" onclick="operacao('/');"></div>                
+            </div>
+            
+        </div>
+    </body>
+</html>
+
+<script type="text/javascript">    
+    var valor1 = "";    
+    var valor2 = "";
+        
+    var sinal = "";
+    var flag = false;
+    
+    function numero(num){
+        if(flag){
+            document.getElementById("resultado").value = "0";
+            flag = false;
+        }
+        
+        
+        var visor = document.getElementById("resultado").value;
+        
+        if(visor === "0"){
+            document.getElementById("resultado").value = num;
+        }else {
+            document.getElementById("resultado").value = visor + num;
+        }
+    }
+    
+    function operacao(sn){
+        valor1 = document.getElementById("resultado").value;
+        sinal = sn;
+        
+        flag = true;
+    }
+    
+    function resultado(){
+        valor2 = document.getElementById("resultado").value;
+        
+        switch (sinal){
+            case '+': document.getElementById("resultado").value = parseInt(valor1) + parseInt(valor2);
+                      break;
+        }
+    }
+    
+</script>

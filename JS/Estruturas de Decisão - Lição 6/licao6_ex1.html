@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta content="text/html"; charset="utf-8" http-equiv="Content-Type">
+		<title>
+
+		</title>
+	</head>
+	<body>
+        <script>
+
+            var dias;
+
+            do{
+                dias = prompt ("Indique um dia da semana(Em números):");
+
+                if (dias == 1){
+                    alert('É Domingo');
+                    window.close();
+                }
+                else if (dias == 2){
+                    alert('É Segunda');
+                    window.close();
+                }
+                else if (dias == 3){
+                    alert('É Terça');
+                    window.close();
+                }
+                else if (dias == 4){
+                    alert('É Quarta');
+                    window.close();
+                }
+                else if (dias == 5){
+                    alert('É Quinta');
+                    window.close();
+                }
+                else if (dias == 6){
+                    alert('É Sexta');
+                    window.close();
+                }
+                else if (dias == 7){
+                    alert('É Sabado');
+                    window.close();
+                }
+                else{
+                    alert('Esse NÃO é um valor válido');
+                    window.close();
+                }
+            }
+            while (dias > 7);
+		</script>
+	</body>
+</html>

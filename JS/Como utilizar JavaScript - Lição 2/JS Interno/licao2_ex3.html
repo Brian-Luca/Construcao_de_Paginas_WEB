@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta content="text/html"; charset="utf-8" http-equiv="Content-Type">
+		<title>
+			Javascript
+		</title>
+	</head>
+
+<!--
+    Para trabalhar com códigos mais extensos deve-se agrupar o javascript entre as TAG´S <script type="text/javascript"> e </script>.
+     
+    O <script type="text/javascript"> indica que a partir desse ponto o que está na página é linguagem de programação que será executada 
+    pelo navegador. Ele ajuda a organizar o código num único local, afetando os elementos HTML através de referências.
+
+    O <script type="text/javascript"> e o seu conteúdo pode ser posicionado em qualquer lugar do documento, mas o funcionamento poderá 
+    ter diferente dependendo do local onde é posicionado. Para entender melhor o que isso quer dizer, realiza os exercícios 2 e 3 a seguir:
+-->		
+	
+	<body>
+        <button id="meuBotao">
+            Gostaria de ser clicado...
+        </button>
+        <script type="text/javascript">
+            document.getElementById("meuBotao").onclick=function() {
+                alert("fixe... Eu funciono!");
+            }
+        </script>
+	</body>
+</html>

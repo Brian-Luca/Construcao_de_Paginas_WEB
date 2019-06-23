@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			DIV's em CSS
+		</title>
+		<style type="text/css">
+			@font-face{
+				font-family: "RegencyScriptFLF";
+				src: url("RegencyScriptFLF.ttf");
+				font-weight: normal;
+				font-style: normal;
+			}
+            body {
+                background-color:#979090;
+                color:#fff;
+            }
+			#contentor {
+				width: 758px;
+				margin: 0 auto;
+				background: #9b8579;
+				padding: 5px;
+				border: 10px groove #fff;
+			}
+            #cabecalho {
+				font-family: "RegencyScriptFLF", cursive;
+				font-size: 4.1em;
+				padding: 5px 0px 5px 10px;
+            }
+			#cabecalho h3 {
+				margin: 0px;
+			}
+            #menu {
+				padding:5px 10px;
+				background:#392e28;
+				width: 738px;
+				font-weight: bolder;
+			}
+			#menu ul {
+				margin:0;
+				padding:0;
+				list-style:none;
+			}
+			#menu li {
+				display:inline;
+				margin:0px;
+				padding-right: 30px;
+            }
+            #corpo {
+				float:left;
+				width:480px;
+				padding:10px;
+            }
+			#corpo p {
+				font-family: verdana;
+				text-align: justify;
+			}
+			div > p:first-letter{
+				color: #b30479;
+				font-weight: lighter;
+				font-size: 30px;
+			}
+			.Marrom {
+				color: #392e28;
+			}
+            #coluna {
+				margin-top: 5px;
+				clear: both;
+				display: inline-block;
+				width: 238px;
+				padding:10px;
+				background:#392e28;
+				padding-bottom: 50px;
+            }
+			#coluna ul {
+				list-style-type: none;
+				text-align: left;
+				border: 0;
+				padding: 0;
+			}
+            #rodape {
+                background:  #392e28;
+				clear: both;
+				padding: 5px;
+				color:#9b8579;
+				width: 748px;
+				font-family: courier;
+			}
+			a {
+				text-decoration: none;
+				font-weight: bolder;
+				color: #9b8579;
+				font-size: 1.1em;
+			}
+			a:hover {
+				color: #392e28;
+				background: #9b8579;
+				padding-left: 3px;
+				padding-right: 3px;
+			}
+			.first::first-letter{
+				color: #b30479;
+			}
+		</style>
+	</head>	
+	<body>
+		<div id="contentor">
+			<div id="cabecalho">
+				<h3>
+					Criar um Blog
+				</h3>
+			</div>
+			<div id="menu">
+				<ul>
+					<li>
+						<a href="/">
+							WordPress
+						</a>
+					</li>
+					<li>
+						<a href="/">
+							Tumblr
+						</a>
+					</li>
+					<li>
+						<a href="/">
+							Blogger
+						</a>
+					</li>
+					<li>
+						<a href="/">
+							Weebly
+						</a>
+					</li>
+					<li>
+						<a href="/">
+							Medium
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div id="corpo">
+				<h1>
+					Blog
+				</h1>
+				<h2 class="Marrom">
+					Escolher o Tema
+				</h2>
+				<p>
+                    Para quem deseja criar um blog, o primeiro e principal passo de todos é escolher o tema que vai ser abordado. É à volta desse tema que
+					milhares de pessoas diáriamante procurarão ler e receber novas informações! É importantíssimo que seja muito bem pensado, a escolha do
+					tema é que será a razão do sucesso ou do fracasso do projeto.	 
+				</p>
+				<h2 class="Marrom">
+					Sugestões
+				</h2>
+				<p>
+					A primeira sugestão é que se goste muito. Quando se gosta, queremos sempre mais.
+						<br>
+					A segunda é que seja algo que se domine. Quem aborda assuntos sem conhecer, rápidamente cai em descrédito.
+						<br>
+					A terceira é escolher um tema que se quer conhecer ou aprofundar, isso cria curiosidade e incentiva a pesquisa.
+						<br>
+					Assuntos que atualmente têm muita procura: Tecnologia, Saúde, Relacionamento e Viagem.	
+				</p>		
+			</div>
+			<div id="coluna">
+				<h1>
+					Inicio
+				</h1>
+				<ul>
+					<li class="first">
+						<a href="/">
+							Blog - O que é?
+						</a>
+					</li>
+					<li class="first">
+						<a href="div_pratico21.html">
+							Escolher o Tema
+						</a>
+					</li>
+					<li class="first">
+						<a href="/">
+							Comprar o Domínio
+						</a>
+					</li>
+					<li class="first">
+						<a href="/">
+							Comprar o Alojamento
+						</a>
+					</li>
+					<li class="first">
+						<a href="/">
+							Escolher um Design Elegante
+						</a>
+					</li>
+					<li class="first">
+						<a href="/">
+							Criar Contas nas Redes Sociais
+						</a>
+					</li>
+				</ul>
+				<h1>
+					Manutenção
+				</h1>
+				<ul>
+					<li class="first">
+						<a href="/">
+							Atualizar regularmente
+						</a>
+					</li>
+					<li class="first">
+						<a href="/">
+							Envolver o leitor
+						</a>
+					</li>
+					<li class="first">
+						<a href="/">
+							Responder os Comentários
+						</a>
+					</li>
+					<li class="first">
+						<a href="/">
+						Enviar emails
+						</a>
+					</li>
+				</ul>			
+			</div>
+			<div id="rodape">
+				csg - Construção de Páginas Web
+			</div>
+		</div>
+	</body>
+</html>

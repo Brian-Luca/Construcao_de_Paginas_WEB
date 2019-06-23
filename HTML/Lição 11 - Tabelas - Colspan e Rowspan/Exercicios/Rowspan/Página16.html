@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+                Rowspan
+		</title>
+	</head>
+
+<!--
+    Rowspan
+    A mesma informação pode ser representada de outra forma.
+    Como se vê agora, a tabela é composta por cinco linhas e três colunas:
+
+    A primeira linha indica os dias das aulas e a primeira coluna as horas.
+    Se reparararmos na célula onde está a disciplina de Geografia, veremos que ela ocupa o espaço de duas linhas 
+    (veja no código que a TAG é <td rowspan="2">, que fará com que as duas linhas sejam unidas e tansformadas numa só.
+-->		
+	
+	<body>
+        <table border="1">
+            <tr>
+                <th>
+
+                </th>
+                <th>
+                    Segunda
+                </th>
+                <th>
+                    Terça
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    9 hs
+                </th>
+                <td rowspan="2">
+                    Geografia
+                </td>
+                <td rowspan="3">
+                    Laboratório de Hardware
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    10 hs
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    11 hs
+                </th>
+                <td>
+                    Matemática
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    12 hs
+                </th>
+                <td>
+                    Inglês
+                </td>
+                <td>
+                    Programação
+                </td>
+            </tr>
+        </table>
+	</body>
+</html>

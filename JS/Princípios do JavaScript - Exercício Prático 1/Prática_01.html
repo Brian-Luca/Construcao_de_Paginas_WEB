@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="text/html"; charset="utf-8" http-equiv="Content-Type">
+		<title>
+			
+		</title>
+        <style type="text/css">
+            .menu{
+                background: url(sprite.png)  no-repeat;
+                border: 5px solid #fff;
+                height: 60px;
+            }
+            .menu ul{
+                margin: 10px;
+                list-style-type: none;
+                padding: 0;
+            }
+            .menu li{
+                float: left;
+                margin-top: 5px;
+            }
+            .menu a{
+                background: url(fundo.png);
+                color: #fff;
+                text-align: center;
+                display: block;
+                text-decoration: none;
+                width: 100px;
+                height: 25px;
+                padding-top: 5px;
+                border: 1px solid #fff;
+                cursor: pointer;
+            }
+            .menu a:hover{
+                background: url(sprite0.png);
+            }
+            .menu a:active{
+                background: url(sprite9.png);
+            }
+            .lic{
+                padding: 7px 15px 0 5px;
+                color:#ffef9c;
+            }
+		</style>
+    </head>
+	<body>
+		<div class="menu">
+            <ul>
+                <li class="lic">
+                    Lição 1
+                </li>
+                <li>
+                    <a href="javascript.pptx" class="button">
+                        Exercicio 1
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="menu">
+            <ul>
+                <li class="lic">
+                    Lição 2
+                </li>
+                <li>
+                    <a href="JSinline/licao2_ex1.html" class="button">
+                        Exercicio 1
+                    </a>
+                </li>
+                <li>
+                    <a href="JSInterno/licao2_ex2.html" class="button">
+                        Exercicio 2
+                    </a>
+                </li>
+                <li>
+                    <a href="JSInterno/licao2_ex3.html" class="button">
+                        Exercicio 3
+                    </a>
+                </li>
+                <li>
+                    <a href="JSExterno/licao2_ex4.html" class="button">
+                        Exercicio 4
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="menu">
+            <ul>
+                <li class="lic">
+                    Lição 3
+                </li>
+                <li>   
+                    <a href="window.alert()/licao3_ex1.html" class="button">
+                        Exercicio 1
+                    </a>
+                </li>
+                <li>
+                    <a href="document.write()/licao3_ex2.html" class="button">
+                        Exercicio 2
+                    </a>
+                </li>
+                <li>
+                    <a href="document.write()/licao3_ex3.html" class="button">
+                        Exercicio 3
+                    </a>
+                </li>
+                <li>
+                    <a href="innerHTML/licao3_ex4.html" class="button">
+                        Exercicio 4
+                    </a>
+                </li>
+                <li>
+                    <a href="console.log()/licao3_ex5.html" class="button">
+                        Exercicio 5
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <script type="text/javascript">
+            var pag;
+
+                for (i = 1; i <= 10; i++){
+                    pag == i;
+                }
+                
+            document.getElementsByClassName("button").onclick=function() {
+                switch(pag){
+                    case 1:
+                        open(JavaScript.pptx);
+                        break;
+                    case 2:
+                        break;
+                    case 3:
+                        break;
+                    case 4:
+                        break;
+                    case 5:
+                        break;
+                    case 6:
+                        break;
+                    case 7:
+                        break;
+                    case 8:
+                        break;
+                    case 9:
+                        break;
+                    case 10:
+                        break;
+                }
+                getElementsByClassName("button")==pag;
+                
+            }
+        </script>
+	</body>
+</html>

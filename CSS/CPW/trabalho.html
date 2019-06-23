@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">	
+		<title>
+			Evolução da Eletrônica
+		</title>
+		<style type="text/css">
+			@font-face {
+				font-family: "Positive System";
+				src: url("SilentLips	.ttf");
+				font-weight: normal;
+				font-style: normal;
+			}
+			@-webkit-keyframes fadeIn {
+				0% { opacity: 0; }
+				100% { opacity: 1; } 
+			}
+			@-moz-keyframes fadeIn {
+				0% { opacity: 0;}
+				100% { opacity: 1; }
+			}
+			@-o-keyframes fadeIn {
+				0% { opacity: 0; }
+				100% { opacity: 1; }
+			}
+			@keyframes fadeIn {
+				0% { opacity: 0; }
+				100% { opacity: 1; }
+			}
+			.fadeIn {
+				-webkit-animation: fadeIn 3s ease-in-out;
+				-moz-animation: fadeIn 3s ease-in-out;
+				-o-animation: fadeIn 3s ease-in-out;
+				animation: fadeIn 3s ease-in-out;
+			}
+			body {
+				color: black;
+                margin: 0px;
+                background: white;
+			}
+            #contentor {
+                margin: 0px;
+                background: white;
+                width: 100%;
+                height: 100%;
+            }
+            #cabeçalho {
+				background-image: url(elet.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 200px;
+                background-clip: border-box;
+            }
+			#imagem {
+				width: 1000px;
+				height: 80px;	  
+				margin: 50px 0px 0px 200px;
+				opacity: 0.6;
+			}
+			#texto {
+				position: absolute;
+				margin-top: -125px;
+				margin-left: 165px; 
+				font-family: "SilentLips";
+				text-align: center;
+				padding: 50px 0 0 50px;
+				font-size: 400%;
+				color: #1E90FF;
+			}
+            #menu {
+                background: #0E0B16;
+				padding: 1px;
+				color: white;
+            }
+			#menu ul {
+				margin:0;
+				padding:0;
+				list-style:none;
+				text-align: center;
+			}
+			#menu li {
+				display:inline;
+				margin:0px;
+				padding-right: 30px;
+            }
+			a {
+				color: white;
+				text-decoration: none;
+				font-weight: bolder;	
+			}
+			a:hover {
+				align-content: center;
+				color: black;
+				background: white;
+				text-decoration: none;
+			}
+			#a1:hover{
+				padding-left: 5px;
+				padding-right: 3px;
+			}
+			#a2:hover{
+				padding-left: 0px;
+				padding-right: 0px;
+			}
+			#a3:hover{
+				padding-left: 0px;
+				padding-right: 0px;
+			}
+			#a4:hover{
+				padding-left: 0px;
+				padding-right: 0px;
+			}
+            #corpo {
+
+			}
+			#texto2{
+				color: red;
+				text-align: left;
+				display: inline-block;
+			}
+			.carousel-control-prev:hover {
+				background: none;
+			}
+			.carousel-control-next:hover {
+				background: none;
+			}
+            #coluna_direita {
+
+            }
+            #rodape {
+
+            }
+
+		</style>
+	</head>
+	<body>
+		<div id="contentor" class="fadeIn">
+			<div id="cabeçalho">
+				<img id="imagem" src="preto.png">
+				<h1 id="texto">
+					Internet
+				</h1>
+			</div>
+			<div id="menu">
+				<ul>
+					<li>
+						<a href="/" id="a1">
+							Página Inicial
+						</a>
+					</li>
+					<li>
+						<a href="/" id="a2">
+							Tecnólogia
+						</a>
+					</li>
+					<li>
+						<a href="/" id="a3">
+							História
+						</a>
+					</li>
+					<li>
+						<a href="/" id="a4">
+							Arduino
+						</a>
+					</li>
+				</ul>
+			</div> 
+			<div id="corpo">
+				
+				<div class="container">
+					<div class="jumbotron">
+						<div class="row featurette">
+							<div class="col-md-4 order-md-2">
+								<div class="imagem0 conteudo" style="display: block;">
+									<h3>Conteúdo da primeira imagem</h3>
+								</div>
+								
+								<div class="imagem1 conteudo" style="display: none;">
+									<h3>Conteúdo da segunda imagem</h3>
+								</div>
+								
+								<div class="imagem2 conteudo" style="display: none;">
+									<h3>Conteúdo da terceira imagem</h3>
+								</div>
+								
+								<div class="imagem3 conteudo" style="display: none;">
+									<h3>Conteúdo da quarta imagem</h3>
+								</div>
+							</div>
+							<div class="col-md-8 order-md-1" >
+								<div  id="myCarousel" class="carousel slide" data-ride="carousel">
+									<ol class="carousel-indicators">
+										<li id="valor-car" data-target="#myCarousel" data-slide-to="0" class="active"></li>
+										<li id="valor-car" data-target="#myCarousel" data-slide-to="1" class=""></li>
+										<li id="valor-car" data-target="#myCarousel" data-slide-to="2" class=""></li>
+									</ol>
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+											<img class="d-block w-100" data-src="holder.js/800x400?auto=yes&amp;bg=777&amp;fg=555&amp;text=First slide" alt="First slide [800x400]" src="ondas.jpg" data-holder-rendered="true">
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100" data-src="holder.js/800x400?auto=yes&amp;bg=666&amp;fg=444&amp;text=Second slide" alt="Second slide [800x400]" src="amplificador.jpg" data-holder-rendered="true">
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100" data-src="holder.js/800x400?auto=yes&amp;bg=555&amp;fg=333&amp;text=Third slide" alt="Third slide [800x400]" src="historia.png" data-holder-rendered="true">
+										</div>
+									</div>
+									<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="coluna_direita">
+
+			</div>
+			<div id="rodape">
+
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>	
+		<script>
+			$(document).ready(function () {
+				//tempo de duração do slide
+				$('.carousel').carousel({
+					interval: 7000
+				});
+				
+				$('#myCarousel').on('slid.bs.carousel', function () {
+					//Receber o valor do atributo data-slide-to quando estiver ativo
+					var numeroSlide = $('#valor-car.active').data('slide-to');
+					//$("#msg").html(numeroSlide);
+					
+					//Ocultar a descrição do slide anterior
+					$('.conteudo').hide();
+					
+					//Apresentar o conteúdo do slide atual
+					$('.imagem' + numeroSlide).show();
+				});
+			});			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta content="text/html"; charset="utf-8" http-equiv="Content-Type">
+		<title>
+            JavaScript
+		</title>
+	</head>
+	<body>
+        <form name="Form" method="GET">
+            Indique seu nome:   
+                <input type="text" name="GetNome" id="GetNome"> 
+                <input type="button" name="BotaoN" value="Enviar" onclick="Nome(this.form)">
+            Em que ANO nasceu: 
+                <input type="text" name="GetAno" id="GetAno">
+                <input type="button" name="BotaoA" value="Enviar" onclick="Ano(this.form)">  
+        </form>
+        <script>   
+            function Nome (form) {
+                var resultadoN = Form.GetNome.value;
+                var nome;
+                if (resultadoN==''){
+                    alert('Não escreveste nada');
+                }
+                else{
+                    nome = resultadoN;
+                }
+            }
+            function Ano (form){
+                var resultadoA = Form.GetAno.value;
+                var ano;
+                if (resultadoA==''){
+                    alert('Não escreveste nada');
+                }
+                else{
+                    ano = resultadoA;
+                    document.write("O teu nome é ",nome," e nasceste em ",ano   ," agora tens ", ," anos de idade");
+                }
+            }
+		</script>
+	</body>
+</html>

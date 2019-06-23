@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="text/html"; charset="utf-8" http-equiv="Content-Type">
+		<title>
+			Exercício Prático 5
+		</title>
+	</head>
+	<body>
+		<h1>
+            Bem vindo ao módulo dos formulários
+        </h1>
+        <h3>
+            Preencha o formulário abaixo para conseguir melhorar a nota final do período 
+        </h3>  
+            <br>
+        <form>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <fieldset>
+                                <legend>
+                                    Dados Pessoais
+                                </legend>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                Nome:
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                <input type="text" name="Nome" maxlength="15">
+                                                            </td>
+                                                            <td width=5></td>
+                                                            <td>
+                                                                Sobrenome:
+                                                                &nbsp;&nbsp;&nbsp;
+                                                                <input type="text" name="Sobrenome" maxlength="30">
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr height=2></tr>
+                                        <tr>
+                                            <td>
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                Nascimento:
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                <input type="text" name="Dia" size="2" value="dd" maxlength="2">
+                                                                <input type="text" name="Mes" size="2" value="mm" maxlength="2">
+                                                                <input type="text" name="Ano" size="4" value="aaaa" maxlength="4">
+                                                            </td>
+                                                            <td width=63></td>
+                                                            <td>
+                                                                Sexo:
+                                                                &nbsp;&nbsp;
+                                                                <input type="radio" name="Sexo" value="Masculino">Masculino
+                                                                <input type="radio" name="Sexo" value="Feminino">Feminino
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr height=2></tr>
+                                        <tr>
+                                            <td>
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                            Contribuinte:
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                            <input type="text" name="Contribuinte" size="15" maxlength="15">
+                                                            </td>
+                                                            <td width=40></td>
+                                                            <td>
+                                                                Estado Civil:
+                                                                &nbsp;&nbsp;
+                                                                <input type="radio" name="Estado Civil" value="Solteiro">Solteiro
+                                                                <input type="radio" name="Estado Civil" value="Casado">Casado
+                                                                <input type="radio" name="Estado Civil" value="Viúvo">Viúvo
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr height=2></tr>
+                                        <tr>
+                                            <td>
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                Cartão de Cidadão:
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                                                <input type="text" name="Codigo" size="10" maxlength="10">
+                                                                    -
+                                                                <input type="text" name="CodigoFinal" size="2" maxlength="2">
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </fieldset>
+                        </td>
+                        <td width=652>
+                            <fieldset>
+                                <legend>
+                                    Morada
+                                </legend>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                Rua:
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                <input type="text" name="Rua" maxlength="30">
+                                                            </td>
+                                                            <td width=5></td>
+                                                            <td>
+                                                                Número:
+                                                                &nbsp;&nbsp;
+                                                                <input type="text" name="Numero" size="4" maxlength="4">
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr height=2></tr>
+                                        <tr>
+                                            <td>
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                Lugar:
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                <input type="text" name="Lugar" maxlength="30">
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr height=2></tr>
+                                        <tr>
+                                            <td>
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                Concelho:
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                <select name="Concelho">
+                                                                    <option value="Amarante">Amarante
+                                                                    <option value="Baião">Baião
+                                                                    <option value="Felgueiras">Felgueiras
+                                                                    <option value="Gondomar">Gondomar
+                                                                    <option value="Lousada">Lousada
+                                                                    <option value="Maia">Maia
+                                                                    <option value="Marco de Canaveses">Marco de Canaveses
+                                                                    <option value="Matosinhos">Matosinhos
+                                                                    <option value="Paços de Ferreira">Paços de Ferreira
+                                                                    <option value="Paredes">Paredes
+                                                                    <option value="Penafiel">Penafiel
+                                                                    <option value="Porto">Porto
+                                                                    <option value="Póvoa de Varzim">Póvoa de Varzim
+                                                                    <option value="Santo Tirso">Santo Tirso
+                                                                    <option value="Trofa">Trofa
+                                                                    <option value="Valongo">Valongo
+                                                                    <option value="Vila do Conde">Vila do Conde
+                                                                    <option value="Vila Nova de Gaia">Vila Nova de Gaia      
+                                                                </select>
+                                                            </td>
+                                                            <td width=30></td>
+                                                            <td>
+                                                                Cidade:
+                                                                &nbsp;&nbsp;&nbsp;
+                                                                <input type="text" name="Cidade" size="10" maxlength="30">
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr height=2></tr>
+                                        <tr>
+                                            <td>
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                Código Postal:
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                                                <input type="text" name="Inicio" size="10" maxlength="10">
+                                                                    -
+                                                                <input type="text" name="Final" size="2" maxlength="2">
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </fieldset>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <fieldset>
+                                <legend>
+                                    Dados de Internet
+                                </legend>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                E-mail:
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                <input type="text" name="Email" maxlength="50">
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr height=2></tr>
+                                        <tr>
+                                            <td>
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                Login de Utilizador:
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                <input type="text" name="Login" maxlength="15">
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr height=2></tr>
+                                        <tr>
+                                            <td>
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                Password:
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                <input type="text" name="Senha" maxlength="20">
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr height=2></tr>
+                                        <tr>
+                                            <td>
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                Confirme a Password:
+                                                                &nbsp;&nbsp;
+                                                                <input type="text" name="Confirma" maxlength="20">
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </fieldset>
+                        </td>
+                        <td>
+                            <fieldset>
+                                <legend>
+                                    Preferências
+                                </legend>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                Estação do Ano:
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                                                <img src="imagens/Inverno.png" alt="Inverno" width="20" height="20">
+                                                                <input type="checkbox" name="Estacao" value="Inverno">Inverno
+                                                                <img src="imagens/Outono.png" alt="Outono" width="20" height="20">
+                                                                <input type="checkbox" name="Estacao" value="Outono">Outono
+                                                                <img src="imagens/Primavera.png" alt="Primavera" width="20" height="20">
+                                                                <input type="checkbox" name="Estacao" value="Primavera">Primavera
+                                                                <img src="imagens/Verao.png" alt="Verao" width="20" height="20">
+                                                                <input type="checkbox" name="Estacao" value="Verao">Verão
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr height=2></tr>
+                                        <tr>
+                                            <td>
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                Clube de Futebol:
+                                                                &nbsp;&nbsp;
+                                                                <img src="imagens/Porto.png" alt="Porto" width="20" height="20">
+                                                                <input type="checkbox" name="Clube" value="Porto">Porto
+                                                                <img src="imagens/Benfica.png" alt="Benfica" width="20" height="20">
+                                                                <input type="checkbox" name="Clube" value="Benfica">Benfica
+                                                                <img src="imagens/Sporting.png" alt="Sporting" width="20" height="20">
+                                                                <input type="checkbox" name="Clube" value="Sporting">Sporting
+                                                                <img src="imagens/Boavista.png" alt="Boavista" width="20" height="20">
+                                                                <input type="checkbox" name="Clube" value="Boavista">Boavista
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr height=2></tr>
+                                        <tr>
+                                            <td>
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                Sugestões:
+                                                            </td>
+                                                            <td width=55></td>
+                                                            <td>
+                                                                <textarea name="Sugestao" rows="3" cols="46">Escreva aqui as suas sugestões para que as aulas seham melhores. Obrigado.
+                                                                </textarea>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </fieldset>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td align="right">
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Limpar">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>  
+        </form>
+	</body>
+</html>

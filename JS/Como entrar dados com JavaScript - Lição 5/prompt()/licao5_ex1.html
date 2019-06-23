@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta content="text/html"; charset="utf-8" http-equiv="Content-Type">
+		<title>
+            JavaScript
+		</title>
+	</head>
+
+<!--
+    A função prompt cria uma caixa de diálogo que recebe uma string como parâmetro. Esse parâmetro será a mensagem que vai aparecer dentro da 
+    caixa de diálogo.
+
+    A caixa de diálogo de prompt tem três elementos: um campo input para texto, um botão OK e outro CANCELAR.
+
+    A função prompt() retorna sempre um valor, ou seja, pode-se passar o que estiver no campo para uma variável.
+
+    Ao se clicar no botão OK, o valor retornado é o que estiver escrito no campo de texto. Se clicar em CANCELAR, o valor retornado será null.
+-->		
+	
+	<body>
+        <h1>
+            prompt()
+        </h1>
+        <p id="Paragrafo">
+            A função prompt cria uma caixa de diálogo que recebe uma string como parâmetro.
+        </p>
+        <script>
+            
+            var nome;
+            var saudacao;
+
+            nome = prompt ("Qual é o teu nome?");
+
+            saudacao="Olá <b>" + nome + "</b> bem-vindo a entrada de dados com o prompt()";
+
+            document.getElementById("Paragrafo").innerHTML=saudacao;
+            
+		</script>
+	</body>
+</html>

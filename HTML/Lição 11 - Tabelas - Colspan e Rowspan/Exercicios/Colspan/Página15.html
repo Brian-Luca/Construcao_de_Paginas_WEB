@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			
+		</title>
+	</head>
+
+<!--
+    Colspan
+    Às vezes, é necessário unir colunas numa tabela para melhorar a leitura da informação.
+    Como se vê, a tabela é composta por três linhas e cinco colunas:
+
+A primeira linha indica as horas de aulas e a primeira coluna os dias da semana.
+
+Se reparararmos na célula onde está a disciplina de Geografia, veremos que ela ocupa o espaço de duas colunas 
+(veja no código que a TAG é <td colspan="2">, que fará com que as duas colunas sejam unidas e tansformadas numa só.
+-->		
+	
+	<body>
+        <table border="1">
+            <tr>
+                <th>
+
+                </th>
+                <th>
+                    9 hs
+                </th>
+                <th>
+                    10 hs
+                </th>
+                <th>
+                    11 hs
+                </th>
+                <th>
+                    12 hs
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    Segunda
+                </th>
+                <td colspan="2">
+                    Geografia
+                </td>
+                <td>
+                    Matemática
+                </td>
+                <td>
+                    Inglês
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Terça
+                </th>
+                <td colspan="3">
+                    Laboratório de Hardware
+                </td>
+                <td>
+                    Programaçao
+                </td>
+            </tr>
+        </table>
+	</body>
+</html>
